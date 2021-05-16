@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hello, world!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+    <!-- Loader for fade in.-->
+  <div id="loader"></div>
+    <h1>Hello World!</h1>
+
+    <!-- Js scripts-->
+  <script type="text/javascript">
+  window.onload = function(){
+    setTimeout(function(){
+      document.getElementById("loader").remove();
+    },1000);
+  }
+  </script>
+<script src="./scripts.js"></script>
+</body>
+</html>
