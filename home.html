@@ -5,12 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
-  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
 </head>
 <body>
     <!-- Loader for fade in.-->
   <div id="loader"></div>
-    <h1>Hello World!</h1>
+    <button id="singlePlayer" class="button" onclick="oneOrTwoPlayer(this)">Single Player</button>
+    <button id="multiPlayer" class="button" onclick="oneOrTwoPlayer(this)">Multi Player</button>
 
     <!-- Js scripts-->
   <script type="text/javascript">
@@ -20,6 +21,6 @@
     },1000);
   }
   </script>
-<script src="./scripts.js"></script>
+<script src="./index.js"></script>
 </body>
 </html>

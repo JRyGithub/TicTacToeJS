@@ -33,3 +33,16 @@
       -webkit-animation-delay: 0.3s;
       animation-delay: 0.3s; 
     }
+
+/*Button CSS */
+.button {
+  background-color: #191970; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
