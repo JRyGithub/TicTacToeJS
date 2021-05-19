@@ -33,10 +33,23 @@
       -webkit-animation-delay: 0.3s;
       animation-delay: 0.3s; 
     }
-
-/*Button CSS */
+/*Arena*/
+.arena{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 100%;
+  align-items: center;
+}
+.buttonRow{
+  padding: 10px;
+}
+/*Button*/
 .button {
-  background-color: #191970; /* Green */
+  background-color: #191970;
+  width: 10rem;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -45,4 +58,63 @@
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+}
+.selected{
+  background-color: #b3d9ff;
+}
+/*Gameboard*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e6f2ff;
+  box-shadow: 10px 5px 5px#b3d9ff;
+}
+.play-area {
+  display: grid;
+  height: 70%;
+  grid-template-columns: auto auto auto;
+}
+.block {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  border: 3px solid black;
+  transition: background 0.2s ease-in-out;
+}
+
+.block:hover {
+  cursor: pointer;
+  background: #191970;
+}
+.occupied:hover {
+  background: #ff3a3a;
+}
+#block_0,
+#block_1,
+#block_2 {
+  border-top: none;
+}
+
+#block_0,
+#block_3,
+#block_6 {
+  border-left: none;
+}
+
+#block_6,
+#block_7,
+#block_8 {
+  border-bottom: none;
+}
+
+#block_2,
+#block_5,
+#block_8 {
+  border-right: none;
 }
